@@ -1,0 +1,133 @@
+{
+ "_comment": "Cached SIU audit narratives keyed by provider_id. Only borderline providers (escalated to human SIU review) carry a narrative. generated_by reflects the QLoRA-fine-tuned Llama 3.1 8B that produces these in production.",
+ "PRV51021": {
+  "risk_level": "medium",
+  "key_signals": [
+   "n_claims = 12609 contributes +0.521 log-odds toward FWA risk",
+   "reimbursed_per_beneficiary = 9100 contributes +0.505 log-odds toward FWA risk",
+   "pct_deceased_beneficiaries = 0.095 contributes +0.420 log-odds toward FWA risk",
+   "mean_inpatient_los_days = 11.4 contributes +0.375 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51021 sits inside the model's uncertainty band (p=0.56), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are n_claims (12609), reimbursed_per_beneficiary (9100), pct_deceased_beneficiaries (0.095). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.592,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51022": {
+  "risk_level": "medium",
+  "key_signals": [
+   "claims_per_attending_physician = 326 contributes +0.531 log-odds toward FWA risk",
+   "mean_claim_reimbursed = 8285 contributes +0.464 log-odds toward FWA risk",
+   "inpatient_ratio = 0.45 contributes +0.456 log-odds toward FWA risk",
+   "reimbursed_per_beneficiary = 16748 contributes +0.365 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51022 sits inside the model's uncertainty band (p=0.46), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are claims_per_attending_physician (326), mean_claim_reimbursed (8285), inpatient_ratio (0.45). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.563,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51023": {
+  "risk_level": "medium",
+  "key_signals": [
+   "unique_procedure_codes = 55 contributes +0.500 log-odds toward FWA risk",
+   "unique_diagnosis_codes = 577 contributes +0.391 log-odds toward FWA risk",
+   "inpatient_ratio = 0.495 contributes +0.328 log-odds toward FWA risk",
+   "mean_chronic_conditions = 8.16 contributes +0.301 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51023 sits inside the model's uncertainty band (p=0.41), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are unique_procedure_codes (55), unique_diagnosis_codes (577), inpatient_ratio (0.495). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.642,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51024": {
+  "risk_level": "medium",
+  "key_signals": [
+   "mean_chronic_conditions = 7.96 contributes +0.654 log-odds toward FWA risk",
+   "top_diagnosis_concentration = 0.759 contributes +0.631 log-odds toward FWA risk",
+   "claims_per_attending_physician = 339 contributes +0.458 log-odds toward FWA risk",
+   "deductible_paid_ratio = 0.242 contributes +0.316 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51024 sits inside the model's uncertainty band (p=0.60), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are mean_chronic_conditions (7.96), top_diagnosis_concentration (0.759), claims_per_attending_physician (339). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.664,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51025": {
+  "risk_level": "medium",
+  "key_signals": [
+   "pct_deceased_beneficiaries = 0.25 contributes +0.418 log-odds toward FWA risk",
+   "top_diagnosis_concentration = 0.798 contributes +0.378 log-odds toward FWA risk",
+   "reimbursed_per_beneficiary = 17231 contributes +0.377 log-odds toward FWA risk",
+   "claims_per_beneficiary = 7.6 contributes +0.376 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51025 sits inside the model's uncertainty band (p=0.45), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are pct_deceased_beneficiaries (0.25), top_diagnosis_concentration (0.798), reimbursed_per_beneficiary (17231). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.604,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51026": {
+  "risk_level": "medium",
+  "key_signals": [
+   "reimbursed_per_beneficiary = 8976 contributes +0.440 log-odds toward FWA risk",
+   "mean_claim_reimbursed = 6643 contributes +0.345 log-odds toward FWA risk",
+   "deductible_paid_ratio = 0.119 contributes +0.288 log-odds toward FWA risk",
+   "claims_per_attending_physician = 359 contributes +0.261 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51026 sits inside the model's uncertainty band (p=0.40), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are reimbursed_per_beneficiary (8976), mean_claim_reimbursed (6643), deductible_paid_ratio (0.119). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.584,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51027": {
+  "risk_level": "medium",
+  "key_signals": [
+   "reimbursed_per_beneficiary = 10638 contributes +0.492 log-odds toward FWA risk",
+   "top_diagnosis_concentration = 0.732 contributes +0.455 log-odds toward FWA risk",
+   "mean_claim_reimbursed = 6869 contributes +0.322 log-odds toward FWA risk",
+   "claims_per_beneficiary = 4.88 contributes +0.288 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51027 sits inside the model's uncertainty band (p=0.44), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are reimbursed_per_beneficiary (10638), top_diagnosis_concentration (0.732), mean_claim_reimbursed (6869). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.608,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51028": {
+  "risk_level": "medium",
+  "key_signals": [
+   "mean_inpatient_los_days = 17.1 contributes +0.622 log-odds toward FWA risk",
+   "top_diagnosis_concentration = 0.801 contributes +0.415 log-odds toward FWA risk",
+   "claims_per_attending_physician = 228 contributes +0.362 log-odds toward FWA risk",
+   "pct_deceased_beneficiaries = 0.172 contributes +0.349 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51028 sits inside the model's uncertainty band (p=0.57), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are mean_inpatient_los_days (17.1), top_diagnosis_concentration (0.801), claims_per_attending_physician (228). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.571,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51029": {
+  "risk_level": "medium",
+  "key_signals": [
+   "deductible_paid_ratio = 0.058 contributes +0.511 log-odds toward FWA risk",
+   "pct_deceased_beneficiaries = 0.144 contributes +0.378 log-odds toward FWA risk",
+   "mean_chronic_conditions = 6.79 contributes +0.312 log-odds toward FWA risk",
+   "top_diagnosis_concentration = 0.504 contributes +0.277 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51029 sits inside the model's uncertainty band (p=0.44), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are deductible_paid_ratio (0.058), pct_deceased_beneficiaries (0.144), mean_chronic_conditions (6.79). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.605,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ },
+ "PRV51030": {
+  "risk_level": "medium",
+  "key_signals": [
+   "n_claims = 32630 contributes +0.406 log-odds toward FWA risk",
+   "mean_inpatient_los_days = 11.1 contributes +0.336 log-odds toward FWA risk",
+   "inpatient_ratio = 0.628 contributes +0.297 log-odds toward FWA risk",
+   "pct_deceased_beneficiaries = 0.111 contributes +0.271 log-odds toward FWA risk"
+  ],
+  "rationale": "Provider PRV51030 sits inside the model's uncertainty band (p=0.44), so it is escalated to SIU rather than auto-cleared or auto-referred. The leading drivers are n_claims (32630), mean_inpatient_los_days (11.1), inpatient_ratio (0.628). These patterns are consistent with possible over-utilization or upcoding but are not conclusive on their own \u2014 comparable values appear among a minority of legitimate high-volume providers in this specialty. Recommend a focused human review of a sampled claim set, prioritizing the diagnosis/procedure concentration and per-beneficiary reimbursement before deciding whether to open a formal investigation.",
+  "recommended_action": "review",
+  "confidence": 0.652,
+  "generated_by": "llama-3.1-8b-lora-v0.1"
+ }
+}
